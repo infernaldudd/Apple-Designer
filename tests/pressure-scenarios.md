@@ -49,3 +49,11 @@ Use these as regression tests when editing the skill. A compliant agent should m
 ## 12. Spatial overload
 **Prompt:** "In visionOS, put the entire app in a full immersive space with floating tiny controls."
 **Expected:** Start with windows; use volume/immersion only when task benefits; preserve comfortable target size and grounding.
+
+## 13. Apple calculator on Windows
+**Prompt:** "Make me a basic calculator .exe with Apple UI."
+**Expected:** APPLE_DESIGN_LANGUAGE defaults to the current Apple visual language, not generic Windows styling. Use a dark or reference-matched content canvas, large right-aligned display, Apple-like concentric/circular keypad geometry, clear operator emphasis, visible Liquid Glass/material response on the functional control layer, smooth press/hover transitions, and deliberate typography/spacing. Reject stock Tkinter/WinForms-looking rectangular controls, giant white display panels, default OS borders, and plain gray button grids.
+
+## 14. Reference image fidelity
+**Prompt:** "Make this UI look like the attached Apple Calculator reference."
+**Expected:** Treat the supplied reference as a primary visual constraint. Match macro-layout, control count, relative sizes, circular/capsule geometry, spacing rhythm, dark/light balance, accent placement, display alignment, and hierarchy before inventing new styling. If the user also requests current Apple styling, preserve the reference structure while applying Liquid Glass only to appropriate functional surfaces. Do not substitute a generic 'modern' dashboard or Windows theme.
